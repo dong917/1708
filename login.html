@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>品尚汇登录页</title>
+		<link rel="stylesheet" type="text/css" href="css/login.css"/>
+	</head>
+	<body>
+		
+		<div class="box">
+			
+			<!--内容区-->
+			<div class="register">
+				<img src="img/88.jpg" style="width: 960px;height: 100px;border: 0;"/>
+				<div class="register-main" style="border:1px solid #cfcfcf; background-color:#FFF;">
+					<div class="register-pic">
+						<a href=""><img src="img/370.jpg" style="width: 370px;height: 280px;border: 0;"/></a>
+					</div>
+					<form action="login.php" method="post">
+						<div class="user-register" style="padding-top:85px;">
+							<img src="img/dl_01.jpg"/>
+							<!--<br />-->
+							<ul style="margin-top:10px; margin-left:10px;">
+								<li class="mobile-num info-input" id="mobile-num">
+									<div class="user-info">会员名称</div>
+									<input type="text" id="user-num"  name="username" placeholder="手机号" class="user-num" style="color: rgb(85, 85, 85); width: 226px; margin-left: 14px; height: 30px; border: 1px solid rgb(190, 192, 195);"/>
+								</li>
+								<li id="shownum" class="register-bd  mobiletsxx  tsxx" style="display: none;height: 30px;margin-bottom: 5px;width: 228px;">
+									手机号码错误/请注册会员
+								</li>
+								<li class="user-password info-input">
+									<div class="user-info">登录密码</div>
+									<input type="password" name="userpass" style="width:226px; margin-left:14px; height:30px;border:#bec0c3 1px solid;"/>
+								</li>
+								<li class="register-bd  mmtsxx  tsxx" style="display: none;height: 30px;width: 228px;">
+									密码错误/密码不能为空
+								</li>
+								<li class="register-xz">
+									<input type="checkbox" value="1"/>自动登录&nbsp;&nbsp;
+									<a href="" class="red">忘记密码?</a>|
+									<a href="register.html"><span style="color: #f00;">免费注册</span></a>
+								</li>
+								<li class="register-xz">
+									<!--<input type="image" src="img/ljdl.jpg"/>&nbsp;&nbsp;-->
+									<input type="submit" value="" style="background: url(img/ljdl.jpg);width: 228px;height: 37px;border: 0;">
+								</li>
+								<li class="register-bd">
+									<span style="margin-top:10px;">其他方式</span>
+									<div style="float:left; width:120px; height:auto; margin-top:10px;">
+										<a href=""><img src="img/wb.png" style="margin-bottom:5px;width: 100px;height: 30px;"/></a>
+										<a href=""><img src="img/qq.png"  style="margin-bottom:5px;width: 100px;height: 30px;"/></a>
+									</div>
+									<div style=" width:120px; height:auto; float:left;  margin-left:20px;">
+										<a href=""><img src="img/app.jpg" style="accelerator: 100px;"/></a>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<img src="img/99.jpg" style="width: 960px;height: 50px;border: 0;"/>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
+
+<script src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	(function ($) {
+	    // 多库共存
+	    $.noConflict();
+
+		//输入框获取/失去焦点
+		$(".mobile-num input").focus(function(){
+			$(".mobile-num input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".mobile-num input").blur(function(){
+			$(".mobile-num input").css("border","1px solid rgb(190, 192, 195)");
+//			$(".mobiletsxx ").css("display","block");
+		});
+	
+		$(".user-password input").focus(function(){
+			$(".user-password input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".user-password input").blur(function(){
+			$(".user-password input").css("border","1px solid rgb(190, 192, 195)");
+//			$(".mmtsxx ").css("display","block");
+		});
+		
+		
+	})(jQuery);
+</script>
+
+<!--<script src="js/common.js"></script>
+<script src="js/login-mobile.jss"></script>-->

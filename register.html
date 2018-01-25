@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>品尚汇注册页</title>
+		<link rel="stylesheet" type="text/css" href="css/register.css"/>
+	</head>
+	<body>
+		
+		<div class="box">
+			
+			<!--内容区-->
+			<div class="register">
+				<img src="img/88.jpg" style="width: 960px;height: 100px;border: 0;"/>
+				<div class="register-main" style="border:1px solid #cfcfcf; background-color:#FFF;">
+					<div class="register-pic">
+						<a href=""><img src="img/370.jpg" style="width: 370px;height: 280px;border: 0;"/></a>
+					</div>
+					<form action="register.php" method="post">
+						<div class="user-register" style="padding-top:85px;">
+							<img src="img/zc_01.jpg"/>
+							<!--<br />-->
+							<span style="font-size:12px; font-family:'Microsoft Yahei'; float:left; margin-top:-23px; margin-left:208px;">
+								已有账号<a href="login.html" style="text-decoration:none; color:#F00">立即登录</a>
+							</span>
+							<ul style="margin-top:10px; margin-left:10px;">
+								<li class="user-info info-input">
+									<div class="mobile-user" style="width: 305px; float:left;margin-right:50px; border: 1px solid rgb(190, 192, 195); text-align: center; font-weight: bold; line-height: 30px; background: rgb(255, 255, 255);">
+										<a href="" style="color:#de4040; font-size:14px; ">手机注册</a>
+									</div>
+								</li>
+								<li class="mobile-num info-input" id="mobile-num">
+									<div class="user-info">手机号码</div>
+									<input type="text" name="username" id="user-num" class="user-num" style="color: rgb(85, 85, 85); width: 226px; margin-left: 14px; height: 30px; border: 1px solid rgb(190, 192, 195);"/>
+									<i class="red">*</i>
+								</li>
+								<li class="mobile-info" id="shownum" style="display: none;text-align: center;background: #e1373d;width: 228px;height: 30px;font-size: 12px;text-indent: 10px;line-height: 30px;color: #fff;margin-left: 75px;">手机号码错误/手机号码已注册</li>
+								<li class="user-sex" style="height:31px; width:226px; margin-left:74px;">
+									<div style="color:#353535; font-size:14px;">
+										<input type="radio" name="sex" style="width: 15px; vertical-align: middle;" value="0"/>
+										先生&nbsp;&nbsp;&nbsp;&nbsp;
+										<input type="radio" name="sex" style="width: 15px; vertical-align: middle;" value="1"/>
+										女生&nbsp;&nbsp;&nbsp;&nbsp;
+									</div>
+								</li>
+								<li class="user-password info-input" id="password-num">
+									<div class="user-info">设置密码</div>
+									<input type="password" name="userpass" id="password" style="width:226px; margin-left:14px; height:30px;border:#bec0c3 1px solid;"/>
+									<i class="red">*</i>
+								</li>
+								<li class="sure-password info-input" id="login-CheckPassword">
+									<div class="user-info">确认密码</div>
+									<input type="password" id="CheckPassword" style="width:226px; margin-left:14px; height:30px;border:#bec0c3 1px solid;"/>
+									<i class="red">*</i>
+								</li>
+								<li class="sure-num info-input">
+									<div class="user-info">验证码&nbsp;&nbsp;&nbsp; </div>
+									<input type="text" style="float: left; width:172px; margin-left:14px; height:30px;border:#bec0c3 1px solid;"/>
+									<img src="img/user (1).png" style="margin-left: 4px;margin-top: 2px; float: left;height: 28px;line-height: 30px; vertical-align: middle;cursor: pointer;"/>
+									<i class="red">*</i>
+								</li>
+								<li class="mobile-sure info-input">
+									<div class="user-info">手机验证码</div>
+										<input type="text" style="color: rgb(85, 85, 85); width: 95px; height: 30px; border: 1px solid rgb(190, 192, 195); float: left;"/>
+										<div class="mobile-color" style="width:122px; height:32px; background:#e1ab08;  float:left; margin-left:8px; text-align:center; line-height:30px; ">
+										<a href="" style="color:#fff;font-size:14px; font-weight:bold;cursor: pointer; "><span class="yzm" style="text-align:center;">获取验证码</span></a>
+									</div>
+									<i class="red" style=" line-height:30px; margin-left:4px;">*</i>
+								</li>
+								<li class="password-info" id="showmsg" style="display: none;">密码不能为空/密码长度须大于等于6位</li>
+								<li class="register-btn">
+									<div style="float:left; width:180px; height:auto; margin-top:5px;">
+										<input type="checkbox" checked="checked"/>
+										<a href="" style="color:#00F;">《品尚红酒用户协议》</a>
+										<br />
+										<input type="submit" value="" style="background: url(img/zc.jpg);width: 100%;height: 37px;border: 0;">
+									</div>
+									<div style=" width:120px; height:auto; float:left; margin-left:25px;">
+										<img src="img/app.jpg" style="width: 100px;"/>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</div>
+				<img src="img/99.jpg" style="width: 960px;height: 50px;border: 0;"/>
+			</div>
+			
+		</div>
+		
+	</body>
+</html>
+
+<script src="js/jquery-1.8.3.js"></script>
+<script type="text/javascript">
+	(function ($) {
+	    // 多库共存
+	    $.noConflict();
+
+		//输入框获取/失去焦点
+		$(".user-password input").focus(function(){
+			$(".user-password input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".user-password input").blur(function(){
+			$(".user-password input").css("border","1px solid rgb(190, 192, 195)");
+		});
+		
+		$(".mobile-num input").focus(function(){
+			$(".mobile-num input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".mobile-num input").blur(function(){
+			$(".mobile-num input").css("border","1px solid rgb(190, 192, 195)");
+		});
+		
+		$(".sure-password input").focus(function(){
+			$(".sure-password input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".sure-password input").blur(function(){
+			$(".sure-password input").css("border","1px solid rgb(190, 192, 195)");
+		});
+				
+		$(".sure-num input").focus(function(){
+			$(".sure-num input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".sure-num input").blur(function(){
+			$(".sure-num input").css("border","1px solid rgb(190, 192, 195)");
+		});
+		
+		$(".mobile-sure input").focus(function(){
+			$(".mobile-sure input").css("border","2px solid rgb(55, 114, 186)");
+		});
+		$(".mobile-sure input").blur(function(){
+			$(".mobile-sure input").css("border","1px solid rgb(190, 192, 195)");
+		});
+		
+	})(jQuery);
+</script>
+<script src="js/common.js"></script>
+<script src="js/register-mobile.js"></script>

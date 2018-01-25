@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>品尚汇购物车页</title>
+		<link rel="stylesheet" type="text/css" href="css/shoppingCar.css"/>
+		<link rel="stylesheet" type="text/css" href="css/carts.css"/>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+	</head>
+	<body>
+		
+		<div class="box">
+			
+			<!--顶部工具栏-->
+			<div class="top-toolbar-wrap">
+				<div class="top-toolbar">
+					<div class="toolbar-left">
+						<div class="toolbar-mobile">手机版</div>
+						<div class="toolbar-wx">关注品尚红酒官方微信</div>
+					</div>
+					<div class="toolbar-right">
+						<span href="" class="toolbar-right-list" style="color:#000;margin-right: 5px;">[普通会员]</span>
+						<a href="" class="toolbar-right-list" style="color:#ca3333;">划船不用桨</a>
+						<a href="" class="toolbar-right-list" style="color:#ca3333;">我的账户</a>
+						<a href="order.html" class="toolbar-right-list">我的订单</a>
+						<a href="" class="toolbar-right-list" style="color:#000;">退出</a>
+						<a href="" class="toolbar-right-list" style="color:#ca3333;">品尚服务</a>
+						<a href="" class="toolbar-right-list">购物热线：400-600-6666</a>
+					</div>
+				</div>
+				<div style="clear: both;"></div>
+			</div>
+	
+			<!--首页头部-->
+			<div class="index-header-wrap">
+				<div class="index-header">
+					<div class="header-logo">
+						<a href="index.html">
+							<img src="img/logo888.jpg" alt="" />
+						</a>						
+					</div>				
+					<div class="header-wx">
+						<img src="img/gwc_03.jpg"/>
+					</div>
+				</div>
+			</div>
+			
+			<!--购物车-->
+			<section class="cartMain">
+			    <div class="cartMain_hd">
+					<div class="shop_info">
+			             <a href="javascript:;">我的购物车</a>
+			        </div>
+			        <ul class="order_lists cartTop">
+			            <li class="list_chk">
+			                <!--所有商品全选-->
+			                <input type="checkbox" id="all" class="whole_check">
+			                <label for="all"></label>
+			                全选
+			            </li>
+			            <li class="list_con">商品信息</li>
+			            <li class="list_price">单价</li>
+			            <li class="list_amount">数量</li>
+			            <li class="list_sum">金额</li>
+			        </ul>
+			    </div>
+			
+			    <div class="cartBox">
+			        
+			        <div class="order_content">
+			            <ul class="order_lists">
+			                <li class="list_chk">
+			                    <input type="checkbox" id="checkbox_2" class="son_check">
+			                    <label for="checkbox_2"></label>
+			                </li>
+			                <li class="list_con">
+			                    <div class="list_img"><a href="javascript:;"><img src="img/4q2.jpg" alt=""></a></div>
+			                    <div class="list_text"><a href="javascript:;">圣威廉朗格多克红葡萄酒2013【整箱】</a></div>
+			                </li>
+			                <li class="list_price">
+			                    <p class="price">￥666</p>
+			                </li>
+			                <li class="list_amount">
+			                    <div class="amount_box">
+			                        <a href="javascript:;" class="reduce reSty">-</a>
+			                        <input type="text" value="1" class="sum">
+			                        <a href="javascript:;" class="plus">+</a>
+			                    </div>
+			                </li>
+			                <li class="list_sum">
+			                    <p class="sum_price">￥666</p>
+			                </li>
+			                <li class="list_op">
+			                    <p class="del"><a href="javascript:;" class="delBtn">移除</a></p>
+			                </li>
+			            </ul>
+			            <ul class="order_lists">
+			                <li class="list_chk">
+			                    <input type="checkbox" id="checkbox_3" class="son_check">
+			                    <label for="checkbox_3"></label>
+			                </li>
+			                <li class="list_con">
+			                    <div class="list_img"><a href="javascript:;"><img src="img/4q2.jpg" alt=""></a></div>
+			                    <div class="list_text"><a href="javascript:;">圣威廉朗格多克红葡萄酒2013【整箱】</a></div>
+			                </li>                  
+			                <li class="list_price">
+			                    <p class="price">￥888</p>
+			                </li>
+			                <li class="list_amount">
+			                    <div class="amount_box">
+			                        <a href="javascript:;" class="reduce reSty">-</a>
+			                        <input type="text" value="1" class="sum">
+			                        <a href="javascript:;" class="plus">+</a>
+			                    </div>
+			                </li>
+			                <li class="list_sum">
+			                    <p class="sum_price">￥888</p>
+			                </li>
+			                <li class="list_op">
+			                    <p class="del"><a href="javascript:;" class="delBtn">移除</a></p>
+			                </li>
+			            </ul>              
+			        </div>
+			    </div>
+			
+			    <!--底部-->
+			    <div class="bar-wrapper">
+					<div style="width:108px; overflow:hidden; float:left; border-right:1px solid #e5e5e5; border-top:1px solid #e5e5e5;margin-left:1px; "><img src="http://image12.wine9.com/activity/2015/index/index127/app.jpg" width="110px;"></div>
+			        <div class="bar-right">
+			            <div class="piece">已选商品<strong class="piece_num">0</strong>件</div>
+			            <div class="totalMoney">商品总金额（不含运费）: <strong class="total_text">0.00</strong></div>
+						<br/>
+			            <div class="calBtn"><a href="javascript:;">结算</a></div>
+			        </div>
+			    </div>
+			</section>
+			<section class="model_bg"></section>
+			<section class="my_model">
+			        <p class="title">删除宝贝<span class="closeModel">X</span></p>
+			        <p>您确认要删除该宝贝吗？</p>
+			        <div class="opBtn"><a href="javascript:;" class="dialog-sure">确定</a><a href="javascript:;" class="dialog-close">关闭</a></div>
+			    </section>
+			
+			<!--推荐商品-->
+			<div class="more-show">
+				<p class="more-tit">更多推荐</p>
+				<div class="more-main">
+					<ul>
+						<li>
+							<div class="main-img">
+								<a href=""><img src="img/141.jpg" alt="" style="width:121px;"/></a>
+							</div>
+							<div class="main-mz">
+								<a href="">列吉塞庄园赤霞…</a>
+								<br />
+								加拿大名家，国...
+							</div>
+							<div class="main-jg">
+								<span style="color:#990000; font-size:14px;">￥168.00</span>
+								<span style="float:right;">已售:3787</span>
+							</div>
+							<div style="clear: both;"></div>
+						</li>
+						<li>
+							<div class="main-img">
+								<a href=""><img src="img/141.jpg" alt="" style="width:121px;"/></a>
+							</div>
+							<div class="main-mz">
+								<a href="">列吉塞庄园赤霞…</a>
+								<br />
+								加拿大名家，国...
+							</div>
+							<div class="main-jg">
+								<span style="color:#990000; font-size:14px;">￥168.00</span>
+								<span style="float:right;">已售:3787</span>
+							</div>
+							<div style="clear: both;"></div>
+						</li>
+						<li>
+							<div class="main-img">
+								<a href=""><img src="img/141.jpg" alt="" style="width:121px;"/></a>
+							</div>
+							<div class="main-mz">
+								<a href="">列吉塞庄园赤霞…</a>
+								<br />
+								加拿大名家，国...
+							</div>
+							<div class="main-jg">
+								<span style="color:#990000; font-size:14px;">￥168.00</span>
+								<span style="float:right;">已售:3787</span>
+							</div>
+							<div style="clear: both;"></div>
+						</li>
+						<li>
+							<div class="main-img">
+								<a href=""><img src="img/141.jpg" alt="" style="width:121px;"/></a>
+							</div>
+							<div class="main-mz">
+								<a href="">列吉塞庄园赤霞…</a>
+								<br />
+								加拿大名家，国...
+							</div>
+							<div class="main-jg">
+								<span style="color:#990000; font-size:14px;">￥168.00</span>
+								<span style="float:right;">已售:3787</span>
+							</div>
+							<div style="clear: both;"></div>
+						</li>
+						<li>
+							<div class="main-img">
+								<a href=""><img src="img/141.jpg" alt="" style="width:121px;"/></a>
+							</div>
+							<div class="main-mz">
+								<a href="">列吉塞庄园赤霞…</a>
+								<br />
+								加拿大名家，国...
+							</div>
+							<div class="main-jg">
+								<span style="color:#990000; font-size:14px;">￥168.00</span>
+								<span style="float:right;">已售:3787</span>
+							</div>
+							<div style="clear: both;"></div>
+						</li>
+						<li>
+							<div class="main-img">
+								<a href=""><img src="img/141.jpg" alt="" style="width:121px;"/></a>
+							</div>
+							<div class="main-mz">
+								<a href="">列吉塞庄园赤霞…</a>
+								<br />
+								加拿大名家，国...
+							</div>
+							<div class="main-jg">
+								<span style="color:#990000; font-size:14px;">￥168.00</span>
+								<span style="float:right;">已售:3787</span>
+							</div>
+							<div style="clear: both;"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!--底部政策-->
+			<div class="index-footer-wrap">
+				<div class="footer-help1">
+					<ul>
+						<li class="help1-list1">
+							<dl>
+								<dt class="f-tit">
+									<a href="">购物指南</a>
+								</dt>
+								<dd>
+									<ul>
+										<li><a href="" class="f-1">购物注册</a></li>
+										<li><a href="" class="f-1">购物流程</a></li>
+										<li><a href="" class="f-1">支付帮助</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li class="help1-list1 help1-list2">
+							<dl>
+								<dt class="f-tit">
+									<a href="">购物指南</a>
+								</dt>
+								<dd>
+									<ul>
+										<li><a href="">购物注册</a></li>
+										<li><a href="">购物流程</a></li>
+										<li><a href="">支付帮助</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li class="help1-list1 help1-list3">
+							<dl>
+								<dt class="f-tit">
+									<a href="">购物指南</a>
+								</dt>
+								<dd>
+									<ul>
+										<li><a href="">购物注册</a></li>
+										<li><a href="">购物流程</a></li>
+										<li><a href="">支付帮助</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+						<li class="help1-list1  help1-list4">
+							<dl>
+								<dt class="f-tit">
+									<a href="">购物指南</a>
+								</dt>
+								<dd>
+									<ul>
+										<li><a href="">购物注册</a></li>
+										<li><a href="">购物流程</a></li>
+										<li><a href="">支付帮助</a></li>
+									</ul>
+								</dd>
+							</dl>
+						</li>
+					</ul>
+				</div>
+				<div class="footer-help2">
+					<ul>
+						<li class="help2-email">
+							<div class="email-con">
+								<div class="email-input">
+									<input type="text" class="email-dy" placeholder="请输入你的email地址"/>
+									<input type="submit" value="" class="email-btn" />
+								</div>
+								<p>更多优惠，专门为你打造</p>
+							</div>
+						</li>
+						<li class="help2-app">
+							<div class="app-left"><img src="img/wx.jpg"/></div>
+							<div class="app-right">
+								<p>手机品尚</p>
+								<p>轻松扫一扫，简单方便</p>
+								<div class="app-bottom">
+									<span class="app-bottom-img">
+										<a href=""><img src="img/android_download.jpg" alt="" /></a>
+									</span>
+									<span class="app-bottom-img">
+										<a href=""><img src="img/ios_download.jpg" alt="" /></a>
+									</span>
+								</div>
+							</div>
+						</li>
+						<li class="help2-guanzhu">
+							<div class="guanzhu-list"><a href="" class="sina">新浪微博</a></div>
+							<div class="guanzhu-list"><a href="" class="qq">腾讯微博</a></div>
+							<div class="guanzhu-list"><a href="" class="wx">官方微信</a></div>
+						</li>
+						<li class="help2-hezuo"><img src="img/pp.jpg"/></li>
+					</ul>
+				</div>
+				<div class="footer-hz"><img src="img/hezuo100.jpg"/></div>
+				<div class="footer-bottom">
+					<div class="bottom-main">
+						<span>
+							<a href="" class="bottom-a">关于我们</a>|
+							<a href="" class="bottom-a">联系我们</a>|
+							<a href="" class="bottom-a">大事记</a>|
+							<a href="" class="bottom-a">合作伙伴</a>
+							<a href="">安全联盟</a>
+						</span>
+						<span style="margin-left: 30px;">品尚红酒 2018 粤ICP备13017896号</span>
+						<span style="margin-left: 30px;">
+							<a href="" style="display:inline-block;text-decoration:none;height:14px;line-height:14px;">
+								<img src="img/ghs.png" style="float:left;"/>
+								<p style="float:left;height:17px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;">粤公网安备 44030502001073号</p>
+							</a>
+						</span>
+					</div>
+					<div class="bottom-link">
+						<div class="link-left" style="height:33px;overflow: hidden;">友情链接：
+							<a href="" style=" color:#B8B5B4; margin-right:10px;">申请链接</a>
+							<a href="">店省省</a>
+							<a href="">糖酒快讯</a>
+							<a href="">食品代理</a>
+							<a href="">红酒品牌</a>
+							<a href="">深圳美食</a>
+							<a href="">国美e站</a>
+							<a href="">折纸</a>
+							<a href="">酒美网</a>
+							<a href="">酒海观潮</a>
+							<a href="">中国食品招商网</a>
+							<a href="">婚宴酒店</a>
+							<a href="">店省省</a>
+							<a href="">糖酒快讯</a>
+							<a href="">食品代理</a>
+							<a href="">红酒品牌</a>
+							<a href="">深圳美食</a>
+							<a href="">国美e站</a>
+							<a href="">折纸</a>
+							<a href="">酒美网</a>
+							<a href="">酒海观潮</a>
+							<a href="">中国食品招商网</a>
+							<a href="">婚宴酒店</a><a href="">店省省</a>
+							<a href="">糖酒快讯</a>
+							<a href="">食品代理</a>
+							<a href="">红酒品牌</a>
+							<a href="">深圳美食</a>
+							<a href="">国美e站</a>
+							<a href="">折纸</a>
+							<a href="">酒美网</a>
+							<a href="">酒海观潮</a>
+							<a href="">中国食品招商网</a>
+							<a href="">婚宴酒店</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+		</div>
+		
+		
+	</body>
+</html>
+<script src="js/jquery-1.8.3.js"></script>
+<script src="./js/carts.js"></script>
